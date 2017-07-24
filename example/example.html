@@ -21,7 +21,11 @@
 
       myScroll = new IScroll('#wrapper', {
         probeType: 3,
-        mouseWheel: true
+        mouseWheel: true,
+        scrollbars: true, // show scrollbar
+        resizeScrollbars: true, // not clear now
+        shrinkScrollbars: 'scale', // possible values: 'clip', 'scale' 
+        // fadeScrollbars: true // do not show scrollbar initially, show it after scroll happened
       });
 
       myScroll.on('scroll', updatePosition);

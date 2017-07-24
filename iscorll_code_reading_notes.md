@@ -123,4 +123,4 @@ when an `IScroll` instance is created, follwing functions will be executed:
 
 `this._init()` calls `_initEvents`. `_initEvents` register events on several target objects.
 
-
+Then in `this._init()`, calls `this._initIndicators()`, `this._initWheel()`, `this._initSnap()` and `this._initKeys()` according to specified options.
