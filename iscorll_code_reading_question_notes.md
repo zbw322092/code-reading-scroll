@@ -56,4 +56,14 @@ https://dom.spec.whatwg.org/
 https://html.spec.whatwg.org/
 
 
+11.
+handleEvent
+https://www.thecssninja.com/javascript/handleevent
 
+12.
+TouchEvent.touches
+https://developer.mozilla.org/en-US/docs/Web/API/TouchEvent/touches
+
+13.
+EventTarget.addEventListener()
+https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener

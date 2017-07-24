@@ -818,7 +818,9 @@ IScroll.prototype = {
 // INSERT POINT: _refresh
 
 	},	
-
+	/* N _events is an empty object initially. on method add event handler into it
+	Object {destroy: Array(1), scroll: Array(1), scrollEnd: Array(1)}
+	the handler funtion is pushed into array*/
 	on: function (type, fn) {
 		if ( !this._events[type] ) {
 			this._events[type] = [];
