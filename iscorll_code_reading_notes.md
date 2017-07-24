@@ -5,6 +5,8 @@
 `Indicator.prototype` 1835-2193
 
 
+## Init Phase
+
 initial `myScorll`:
 ``` javascript
 directionX:0 // default value
@@ -124,3 +126,9 @@ when an `IScroll` instance is created, follwing functions will be executed:
 `this._init()` calls `_initEvents`. `_initEvents` register events on several target objects.
 
 Then in `this._init()`, calls `this._initIndicators()`, `this._initWheel()`, `this._initSnap()` and `this._initKeys()` according to specified options.
+
+`this._initWheel` register wheel events.
+
+`this._initSnap` enable iScroll snap to fixed positions and elements.
+When `snap` is enabled, method like `goToPage`, `next` and `prev` can be called.
+

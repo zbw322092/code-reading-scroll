@@ -25,7 +25,12 @@
         scrollbars: true, // show scrollbar
         resizeScrollbars: true, // not clear now
         shrinkScrollbars: 'scale', // possible values: 'clip', 'scale' 
-        // fadeScrollbars: true // do not show scrollbar initially, show it after scroll happened
+        fadeScrollbars: true, // do not show scrollbar initially, show it after scroll happened
+        snap: 'li', // or simply is ture
+        keyBindings: {
+          pageUp: 'w',
+          pageDown: 's'
+        } // or simply using default key settings. just set keyBindings: true
       });
 
       myScroll.on('scroll', updatePosition);
