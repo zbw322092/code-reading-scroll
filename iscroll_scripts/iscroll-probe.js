@@ -333,7 +333,7 @@ function IScroll (el, options) {
 
 		snapThreshold: 0.334,
 
-// INSERT POINT: OPTIONS
+		// INSERT POINT: OPTIONS
 		disablePointer : !utils.hasPointer,
 		disableTouch : utils.hasPointer || !utils.hasTouch,
 		disableMouse : utils.hasPointer || utils.hasTouch,
@@ -401,7 +401,7 @@ function IScroll (el, options) {
 	if ( this.options.probeType == 3 ) {
 		this.options.useTransition = false;	}
 
-// INSERT POINT: NORMALIZATION
+	// INSERT POINT: NORMALIZATION
 
 	// Some defaults
 	this.x = 0;
@@ -410,7 +410,7 @@ function IScroll (el, options) {
 	this.directionY = 0;
 	this._events = {};
 
-// INSERT POINT: DEFAULTS
+	// INSERT POINT: DEFAULTS
 
 	this._init();
 	this.refresh();
@@ -441,7 +441,7 @@ IScroll.prototype = {
 			this._initKeys();
 		}
 
-// INSERT POINT: _init
+	// INSERT POINT: _init
 
 	},
 
@@ -705,7 +705,7 @@ IScroll.prototype = {
 			easing = this.options.bounceEasing;
 		}
 
-// INSERT POINT: _end
+		// INSERT POINT: _end
 
 		if ( newX != this.x || newY != this.y ) {
 			// change easing function when scroller goes out of the boundaries
@@ -815,7 +815,7 @@ IScroll.prototype = {
 
 		this.resetPosition();
 
-// INSERT POINT: _refresh
+		// INSERT POINT: _refresh
 
 	},	
 	/* N _events is an empty object initially. on method add event handler into it
@@ -946,7 +946,7 @@ IScroll.prototype = {
 		}
 
 
-// INSERT POINT: _transitionTime
+		// INSERT POINT: _transitionTime
 
 	},
 
@@ -961,7 +961,7 @@ IScroll.prototype = {
 		}
 
 
-// INSERT POINT: _transitionTimingFunction
+		// INSERT POINT: _transitionTimingFunction
 
 	},
 
@@ -992,7 +992,7 @@ IScroll.prototype = {
 	}
 
 
-// INSERT POINT: _translate
+	// INSERT POINT: _translate
 
 	},
 
@@ -1265,7 +1265,7 @@ IScroll.prototype = {
 			this._execEvent('scroll');
 		}
 
-// INSERT POINT: _wheel
+		// INSERT POINT: _wheel
 	},
 
 	_initSnap: function () {
@@ -1944,7 +1944,7 @@ Indicator.prototype = {
 		}
 
 
-// INSERT POINT: indicator._move
+		// INSERT POINT: indicator._move
 
 		e.preventDefault();
 		e.stopPropagation();

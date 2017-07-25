@@ -123,6 +123,7 @@ when an `IScroll` instance is created, follwing functions will be executed:
 ```
 
 
+### this._init()
 `this._init()` calls `_initEvents`. `_initEvents` register events on several target objects.
 
 Then in `this._init()`, calls `this._initIndicators()`, `this._initWheel()`, `this._initSnap()` and `this._initKeys()` according to specified options.
@@ -131,4 +132,25 @@ Then in `this._init()`, calls `this._initIndicators()`, `this._initWheel()`, `th
 
 `this._initSnap` enable iScroll snap to fixed positions and elements.
 When `snap` is enabled, method like `goToPage`, `next` and `prev` can be called.
+
+
+### this.refresh()
+In this method, set: 
+`this.wrapperWidth`, `this.wrapperHeight`
+`this.scrollerWidth`, `this.scrollerHeight`
+`this.maxScrollX`, `this.maxScrollY`
+`this.hasHorizontalScroll`, `this.hasVerticalScroll`
+`this.endTime`, 
+`this.directionX`, `this.directionY`
+`this.wrapperOffset`
+
+### this.scrollTo
+scroll to any position with `scrollTo` method.
+
+In `scrollTo`, some 'internal methods'(with `_`  before its name) `_transitionTimingFunction`, `_transitionTime`, `_translate`, `_animate` will be called.
+
+
+### other initial values
+Other initial values are clearly explained in [API DOC]((https://github.com/cubiq/iscroll) ). Reference it when browse code.
+
 

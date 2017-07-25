@@ -26,15 +26,22 @@
         resizeScrollbars: true, // not clear now
         shrinkScrollbars: 'scale', // possible values: 'clip', 'scale' 
         fadeScrollbars: true, // do not show scrollbar initially, show it after scroll happened
-        snap: 'li', // or simply is ture
+        // snap: 'li', // or simply is ture
         keyBindings: {
           pageUp: 'w',
           pageDown: 's'
-        } // or simply using default key settings. just set keyBindings: true
+        }, // or simply using default key settings. just set keyBindings: true
+        // disablePointer: true // disable pointer events
+        eventPassthrough: 'horizontal',
+        bounceEasing: 'bounce',  // Valid values are: 'quadratic', 'circular', 'back', 'bounce', 'elastic'
+        tap: true,
+        // invertWheelDirection: true
       });
 
       myScroll.on('scroll', updatePosition);
       myScroll.on('scrollEnd', updatePosition);
+
+      document.getElementById('wrapper').addEventListener('tap', () => {console.log('I am tapped')}, false);
     }
     
   </script>
