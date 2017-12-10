@@ -1,4 +1,4 @@
-# zonscroll code reading
+# zenscroll related resources
 ## scroll-behavior
 [1] scroll-behavior
 https://css-tricks.com/almanac/properties/s/scroll-behavior/ <br>
@@ -18,6 +18,10 @@ https://css-tricks.com/smooth-scrolling-accessibility/ <br>
 
 ## Document.scrollingElement MDN
 https://developer.mozilla.org/en-US/docs/Web/API/Document/scrollingElement <br>
+
+The `scrollingElement` read-only property of the `Document` interface returns a reference to the `Element` that **scrolls the document**. In **standards mode**, this is the root element of the document, **`document.documentElement`**.
+
+When in **quirks mode**, the `scrollingElement` attribute returns the **HTML body element** (or null if it does not exist).
 
 ``` javascript
 var scrollElm = document.scrollingElement;
@@ -78,3 +82,25 @@ Simple but not exact explanation about `HTMLElement.offsetParent`
 https://stackoverflow.com/a/17975012/6498272 <br>
 
 Understand it with examples. <br>
+
+## Document.documentElement
+https://developer.mozilla.org/en-US/docs/Web/API/Document/documentElement <br>
+
+> `Document.documentElement` returns the `Element` that is the **root element** of the document (for example, the <html> element for HTML documents).
+
+
+## Get an Element's Position Using JavaScript
+https://www.kirupa.com/html5/get_element_position_using_javascript.htm <br>
+
+## Performance - Date.now() vs Date.getTime()
+https://stackoverflow.com/a/12517413/6498272 <br>
+
+> ... the time value from any already-created Date instance is frozen at the time of its construction
+
+## Element.scrollHeight
+https://developer.mozilla.org/en-US/docs/Web/API/Element/scrollHeight <br>
+
+> The `Element.scrollHeight` read-only property is a measurement of the height of an element's content, **including content not visible** on the screen due to overflow.
+
+> The `scrollHeight` value is equal to the minimum height the element would require in order to fit all the content in the viewport without using a vertical scrollbar. It **includes the element's padding, but not its border or margin.** It can also include the height of pseudo-elements such as `:before` or `:after`.
+
