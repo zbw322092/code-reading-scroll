@@ -30,3 +30,12 @@ https://github.com/danro/jquery-easing/blob/master/jquery.easing.js <br>
 
 [3] easing.net
 http://easings.net/zh-cn <br>
+
+
+## Window.pageYOffset
+https://developer.mozilla.org/en-US/docs/Web/API/Window/pageYOffset
+
+> The read-only Window property `pageYOffset` is an alias for `scrollY`; as such, it returns the number of pixels the document is currently scrolled along the vertical axis (that is, up or down), with a value of 0.0 indicating that the top edge of the Document is currently aligned with the top edge of the window's content area.
+
+Not clear the difference between `Window.pageYOffset` and `Window.scrollY` now, except that `Window.pageYOffset` has better browser compatibility.
+
