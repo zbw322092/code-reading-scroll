@@ -10,7 +10,10 @@ https://css-tricks.com/snippets/jquery/smooth-scrolling/ <br>
 http://iamdustan.com/smoothscroll/ <br>
 
 [4] scroll-behavior MDN
-https://developer.mozilla.org/en-US/docs/Web/CSS/scroll-behavior 
+https://developer.mozilla.org/en-US/docs/Web/CSS/scroll-behavior <br>
+
+`scroll-behavior` is not support in `Safari` and `IE`(including `Edge`);
+Details: https://developer.mozilla.org/en-US/docs/Web/CSS/scroll-behavior#Browser_compatibility <br>
 
 todo
 [1] Smooth Scrolling and Accessibility
@@ -104,3 +107,32 @@ https://developer.mozilla.org/en-US/docs/Web/API/Element/scrollHeight <br>
 
 > The `scrollHeight` value is equal to the minimum height the element would require in order to fit all the content in the viewport without using a vertical scrollbar. It **includes the element's padding, but not its border or margin.** It can also include the height of pseudo-elements such as `:before` or `:after`.
 
+<br>
+<br>
+<br>
+<br>
+
+## -------------------------------------------
+## Browser History API
+### Using the HTML5 History API
+https://css-tricks.com/using-the-html5-history-api/ <br>
+`history.replaceState`, `history.pushState`, `popstate` and so forth.
+
+### Manipulating the browser history MDN
+https://developer.mozilla.org/en-US/docs/Web/API/History_API <br>
+
+### Getting Started With The History API
+http://blog.teamtreehouse.com/getting-started-with-the-history-api <br>
+
+Try the example in this post. <br>
+
+### History API: Scroll Restoration
+https://developers.google.com/web/updates/2015/09/history-api-scroll-restoration <br>
+
+
+### todo
+[1] Implementing pushState for twitter.com
+https://blog.twitter.com/engineering/en_us/a/2012/implementing-pushstate-for-twittercom.html <br>
+
+[2] Making AJAX applications crawlable
+https://developers.google.com/webmasters/ajax-crawling/docs/learn-more <br>
